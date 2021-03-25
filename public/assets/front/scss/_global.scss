@@ -1,0 +1,173 @@
+h1{ color: $grey-base; }
+h1, h2{ 
+	font-size: $font-size-h2;
+	text-align: center;
+	text-transform: uppercase;
+}
+h2{ margin-bottom: 0;}
+h3{ 
+	font-size: $font-size-h3;
+	color: $teal;
+}
+h4{ 
+	font-size: $font-size-small; 
+	color: $grey-dark;
+	text-transform: uppercase;
+}
+p { 
+	color: $grey-base; 
+	line-height: 1.4rem;
+	text-align: center;
+}
+a{ 
+	color: $grey-base;
+	text-decoration: none;
+	transition: all 0.2s ease-out;
+	&:hover { color: $brand-primary; }
+}
+body{ 
+	// background-image: url('../images/bg_home.jpg');
+	background-repeat: no-repeat;
+	font-family: $font-family-base;
+}
+img{max-width: 100%; height: auto;}
+.container { 
+	margin-right: auto; 
+	margin-left: auto;
+	&.narrow{ 
+		max-width: 800px;
+		padding-top: 72px;
+	}
+}
+.txt-narrow { 
+	max-width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.equal-padding {padding: 1rem!important;}
+.color-primary{ color: $brand-primary; }
+.color-orange{ color: $orange; }
+
+//== Listing Blocks
+.listing{
+	padding: 40px 0;
+	.box-nested{
+		text-align: center;
+		padding: 30px;
+		p { line-height: $line-height-max;}
+	}
+}
+
+/* Tooltip container */
+.tooltip {
+    position: relative;
+    display: inline-block;
+    text-transform: unset!important;
+    /* Tooltip text */
+	.tooltiptext {
+	    visibility: hidden;
+	    width: 320px;
+	    background-color: $blue-light;
+	    color: #fff;
+	    padding: 30px;
+	    border-radius: 6px;
+	    box-sizing: border-box;
+	    position: absolute;
+	    left: 105%;
+	    z-index: 1;
+	    &::after {
+		    content: " ";
+		    position: absolute;
+		    top: 50%;
+		    right: 100%; 
+		    margin-top: -5px;
+		    border-width: 10px;
+		    border-style: solid;
+		    border-color: transparent $blue-light transparent transparent;
+		}
+	}
+	/* Show the tooltip text when you mouse over the tooltip container */
+	&:hover .tooltiptext { visibility: visible;	}
+}
+
+// Popup box
+.overlay {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(0, 0, 0, 0.7);
+	transition: opacity 500ms;
+	visibility: hidden;
+	opacity: 0;
+	&:target {
+		visibility: visible;
+		opacity: 1;
+	}
+}
+.popup {
+ 	box-sizing: border-box;
+    margin: 20px auto;
+    // padding: 30px 20px;
+    position: relative;
+    transition: all 5s ease-in-out 0s;
+    width: 90%;
+    z-index: 999999;
+	.close {
+		position: absolute;
+		top: 0;
+		right: 15px;
+		transition: all 200ms;
+		font-size: 30px;
+		font-weight: bold;
+		text-decoration: none;
+		color: $grey-base;
+		z-index: 99999;
+		&:hover { color: $brand-primary; }
+	}
+	.content {
+		max-height: 30%;
+		overflow: auto;
+	}
+}
+.social-media-hori {
+    padding-left: 0;
+    display: flex;
+    flex-direction: row;
+    font-size: 1rem;
+    list-style: none!important;
+    li{ padding: 10px; }
+}
+// Font-awsome
+// form .form-group i.fa-mobile {font-size: 3rem;}
+// Mobile slider
+#slider {
+	margin: 0 auto 20px auto;
+	list-style: none;
+	position: relative;
+	padding-left:0;
+	height:380px;
+	overflow: hidden;
+	text-align: center;
+	p, h4{text-align: center;}
+	.btn{ margin-bottom: 40px;}
+}
+#dots {
+  	list-style:none;
+  	padding:30px 0;
+  	margin-bottom: 8px;
+	text-align: center;
+}
+#dots li {
+	display:inline-block;
+	border-radius:10px;
+	width:10px;
+	height:10px;
+	margin: 0 5px;
+	border:none;
+	background: white;
+	cursor:pointer;
+	background: $grey-light;
+}
+#dots li.active {background: $brand-primary;}

@@ -1,0 +1,112 @@
+.arr-back{
+  margin-left:10px;
+  color:#737373;
+}
+.pg-title{
+  margin-right:10px;
+  font-size: 18px;
+}
+.txtcategory{
+  color:#737373;
+  font-size: 17px;
+  line-height: 24px;
+}
+.web-deal-heading-2{
+  text-decoration: underline;
+  font-size: 22px;
+}
+.info-icon2{
+  color:#FECC00;
+}
+.p1{
+  font-size:14px;
+}
+.web-brand .header{
+  position: relative;
+    background: linear-gradient(#ff7b2b, #fd9454);
+    width: 100%;
+    height: 100px;
+}
+.web-brand .sec1 h1.font {
+    padding-top: 2rem;
+    font-size: 30px;
+    font-family: 'Lato', sans-serif;
+    padding-bottom: 1rem;
+    color: #484848;
+}
+.web-brand .sec1 p.font2{
+  font-size: 22px;
+  font-family: 'Lato-Regular', sans-serif;
+  color: #000 !important;
+  margin-bottom: 5px;
+}
+.web-brand .sec1 p.font{
+  font-family: 'Lato-Regular', sans-serif;
+  font-size: 22px;
+  color:#777777;
+  font-weight: normal;
+}
+
+.web-brand .sec2 .category span{
+  background: #f48f4c;
+}
+
+.web-brand .center-logo {
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    margin-left: -50px;
+}
+@media (min-width: 768px){
+  .hidden-sm-custom{
+    display: none;
+  }
+}
+@media (max-width: 767px){
+  .hidden-xs{
+    display: none;
+  }
+	.web-deal-cat-ios span{
+    width: 90% !important;
+  }
+  .web-deal-detail-ios .center-logo img{
+    width: 140px;
+    height: auto;
+  }
+  .web-deal-detail-ios .header{
+    height: 140px;
+  }
+  .web-deal-detail-ios .center-logo{
+    margin-left: -68px;
+  }
+  .web-deal-detail-ios .sec2 .category span{
+    width: 80%;
+    height: auto;
+  }
+  .web-deal-detail-ios .sec2 .category p.font{
+    font-weight: normal;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+  }
+  .web-deal-ios .sec2 .category p.font{
+    font-weight: normal;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+  }
+}
+@media (max-width: 1024px){
+	
+}
+@media (max-width: 320px){
+
+}
+@media (max-width: 480px){
+    .web-deal-cat{
+      padding-top: 2rem !important;
+    }
+    .web-deal-heading-2{
+      color: #424242 !important;
+      font-size: 22px;
+      padding-top: 22px !important;
+    }
+}

@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+// Core variables and mixins
+@import "variables";
+@import "mixins/_flex";
+
+// RESET
+@import "normalize";
+
+// CORE
+@import "global";
+@import "grid";
+
+// COMPONENTS
+@import "fonts";
+@import "forms";
+// @import "clearfix";
+
+// PARTIALS
+@import "blog";
+@import "header";
+@import "pages";
+@import "footer";
